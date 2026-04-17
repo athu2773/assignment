@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import FrameComponent from "../components/FrameComponent";
-import Slider1 from "../components/slider1";
+import Slider1 from "../components/Slider1";
 import FrameComponent2 from "../components/FrameComponent2";
-import About from "../components/about";
+import About from "../components/About";
 import FrameComponent1 from "../components/FrameComponent1";
 
 const Index: NextPage = () => {
