@@ -14,7 +14,11 @@ const FrameComponent1: NextPage<FrameComponent1Type> = ({ className = "" }) => {
         <section className="flex-1 flex items-start gap-17 min-w-140 max-w-full text-left text-num-24 text-black font-poppins mq900:gap-[34px] mq900:flex-wrap mq900:min-w-full mq450:gap-[17px]">
           <div className="rounded-num-20 bg-whitesmoke-100 flex items-start pt-30.75! pb-num-23! pl-num-23! pr-num-23! box-border min-w-56 mq900:flex-1">
             <div className="h-54.5 w-56 relative rounded-num-20 bg-whitesmoke-100 hidden shrink-0" />
-            <h3 className="m-0! w-43.75 relative text-[length:inherit] font-semibold font-[inherit] inline-block z-1 shrink-0 mq450:text-num-19">{`INSPIRATION & <br/>INSIGHTS`}</h3>
+            <h3 className="m-0! w-43.75 relative text-[length:inherit] font-semibold font-[inherit] z-1 shrink-0 mq450:text-num-19">
+              INSPIRATION &
+              <br />
+              INSIGHTS
+            </h3>
           </div>
           <div className="flex-1 flex flex-col items-start pt-num-1! pb-num-0! pl-num-0! pr-num-0! box-border min-w-92.5 max-w-full text-num-16 mq900:min-w-full">
             <div className="self-stretch flex flex-col items-end gap-8.25 max-w-full mq900:gap-4">
