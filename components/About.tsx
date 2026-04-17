@@ -23,7 +23,7 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
           <div className="flex flex-col items-start pt-num-6! pb-num-0! pl-num-0! pr-num-0! box-border min-w-56 mq900:flex-1">
             <div className="self-stretch rounded-num-20 bg-whitesmoke-100 flex items-start pt-30! pb-6.5! pl-6.25! pr-6.25! z-1">
               <div className="h-54.5 w-56 relative rounded-num-20 bg-whitesmoke-100 hidden shrink-0" />
-              <h3 className="m-0! relative text-[length:inherit] font-semibold font-[inherit] z-2 shrink-0 mq450:text-num-19">
+              <h3 className="m-0! relative text-[length:inherit] font-semibold font-playfair z-2 shrink-0 mq450:text-num-19">
                 ABOUT <br />
                 FIRM
               </h3>
@@ -52,11 +52,11 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
         <section className="w-141.75 h-69 flex flex-col items-start gap-4.25 max-w-full shrink-0 text-left text-num-36 text-darkslategray font-poppins">
           <div className="w-128.5 flex flex-col items-start pt-num-0! pb-3.5! pl-num-0! pr-num-0! box-border gap-0.5 max-w-full">
             <div className="w-118 flex items-start justify-between gap-5 max-w-full mq450:flex-wrap mq450:gap-5">
-              <h1 className="m-0! relative text-[length:inherit] font-semibold font-[inherit] z-1 mq900:text-num-29 mq450:text-num-22">
+              <h1 className="m-0! relative text-[length:inherit] font-semibold font-playfair z-1 mq900:text-num-29 mq450:text-num-22">
                 250+
                 <br />
               </h1>
-              <h2 className="m-0! w-30.75 relative text-[length:inherit] font-semibold font-[inherit] inline-block shrink-0 z-1 mq900:text-num-29 mq450:text-num-22">
+              <h2 className="m-0! w-30.75 relative text-[length:inherit] font-semibold font-playfair inline-block shrink-0 z-1 mq900:text-num-29 mq450:text-num-22">
                 1000+
                 <br />
               </h2>
@@ -74,11 +74,11 @@ const About: NextPage<AboutType> = ({ className = "" }) => {
           <div className="self-stretch h-0.5 relative bg-midnightblue z-1" />
           <div className="w-128.5 flex flex-col items-start gap-0.5 max-w-full">
             <div className="w-118 flex items-start justify-between gap-5 max-w-full mq450:flex-wrap mq450:gap-5">
-              <h2 className="m-0! w-24.5 relative text-[length:inherit] font-semibold font-[inherit] inline-block shrink-0 z-1 mq900:text-num-29 mq450:text-num-22">
+              <h2 className="m-0! w-24.5 relative text-[length:inherit] font-semibold font-playfair inline-block shrink-0 z-1 mq900:text-num-29 mq450:text-num-22">
                 35+
                 <br />
               </h2>
-              <h2 className="m-0! w-30.75 relative text-[length:inherit] font-semibold font-[inherit] inline-block shrink-0 z-1 mq900:text-num-29 mq450:text-num-22">
+              <h2 className="m-0! w-30.75 relative text-[length:inherit] font-semibold font-playfair inline-block shrink-0 z-1 mq900:text-num-29 mq450:text-num-22">
                 15+
                 <br />
               </h2>

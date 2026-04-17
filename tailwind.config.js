@@ -27,8 +27,9 @@ module.exports = {
         "num-498": "498px",
       },
       fontFamily: {
-        "source-sans-pro": "Source Sans Pro",
-        poppins: "Poppins",
+        "playfair": "Playfair Display, serif",
+        "source-sans-pro": "Source Sans Pro, sans-serif",
+        "poppins": "Poppins, sans-serif",
       },
       borderRadius: {
         "num-20": "20px",

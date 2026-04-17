@@ -50,7 +50,7 @@ const Slider1: NextPage<Slider1Type> = ({ className = "" }) => {
               </b>
             </div>
             <div className="self-stretch flex flex-col items-start pt-num-0! pb-num-7! pl-num-0! pr-num-23! box-border gap-[5.5px] max-w-full text-[64px]">
-              <h1 className="m-0! w-114.75 relative text-[length:inherit] leading-15 font-bold font-[inherit] inline-block max-w-full z-1 mq900:text-[51px] mq900:leading-[48px] mq450:text-[38px] mq450:leading-9">
+              <h1 className="m-0! w-114.75 relative text-[length:inherit] leading-15 font-bold font-playfair inline-block max-w-full z-1 mq900:text-[51px] mq900:leading-[48px] mq450:text-[38px] mq450:leading-9">
                 EMPOWERED <br />
                 WORKPLACES
               </h1>
