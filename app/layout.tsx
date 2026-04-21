@@ -1,9 +1,8 @@
 import "./global.css";
 
-import { ReactNode } from "react";
-
 export const metadata = {
-  title: `My Assignment DotNet`,
+  title: "HLS Global Group - Empowered Workplaces",
+  description: "Accountants and Global Business Advisors - Accounting, Taxation, & Business Advisory between India, Japan, and the World",
 };
 
 export default function RootLayout({
@@ -12,8 +11,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning>{children}</body>
+    <html lang="en" className="bg-white">
+      <body>{children}</body>
     </html>
   );
 }
