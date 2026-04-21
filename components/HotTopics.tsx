@@ -17,37 +17,37 @@ const topics = [
 
 export default function HotTopics() {
   return (
-    <section className="w-full px-[90px] py-[40px] bg-white">
-      <div className="flex items-start gap-8">
+    <section className="w-full px-[80px] py-[30px] bg-white">
+      <div className="flex items-start gap-10">
         {/* Hot Topics Badge */}
-        <div className="flex-shrink-0 pt-[39px]">
+        <div className="flex-shrink-0 pt-[20px]">
           <div 
-            className="rounded-md px-[23px] py-[16px] inline-block"
+            className="rounded-md px-5 py-3 inline-block"
             style={{
               background: "linear-gradient(90deg, #ff7300 0%, #ff9a44 100%)",
             }}
           >
-            <span className="text-[12px] font-semibold text-[#1b1b1b] uppercase tracking-wide font-[family-name:var(--font-poppins)]">
+            <span className="text-[10px] font-semibold text-[#1b1b1b] uppercase tracking-wider font-[family-name:var(--font-poppins)]">
               HOT TOPICS
             </span>
           </div>
         </div>
 
         {/* Topics Grid */}
-        <div className="flex-1 flex gap-8">
+        <div className="flex-1 flex gap-6">
           {topics.map((topic, index) => (
-            <div key={index} className="flex-1 flex flex-col max-w-[274px]">
+            <div key={index} className="flex-1 flex flex-col max-w-[220px]">
               {/* Blue top line */}
-              <div className="w-full h-[2.4px] bg-[#00338d] rounded-full mb-[8.5px]" />
+              <div className="w-full h-[2px] bg-[#00338d] mb-3" />
               
               {/* Topic Title */}
-              <p className="text-[16px] text-[#333] font-[family-name:var(--font-poppins)] leading-[1.4] mb-8 min-h-[66px]">
+              <p className="text-[13px] text-[#333] font-[family-name:var(--font-poppins)] leading-[1.5] mb-6 min-h-[60px]">
                 {topic.title}
               </p>
               
               {/* Arrow Link */}
               <div className="mt-auto">
-                <svg width="33" height="9" viewBox="0 0 33 9" fill="none" xmlns="http://www.w3.org/2000/svg" className="cursor-pointer hover:translate-x-1 transition-transform">
+                <svg width="28" height="8" viewBox="0 0 33 9" fill="none" xmlns="http://www.w3.org/2000/svg" className="cursor-pointer hover:translate-x-1 transition-transform">
                   <path d="M0 4.5H31M31 4.5L27 1M31 4.5L27 8" stroke="#1b1b1b" strokeWidth="1.5"/>
                 </svg>
               </div>

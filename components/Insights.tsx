@@ -27,81 +27,119 @@ const insightItems = [
 
 export default function Insights() {
   return (
-    <section className="w-full bg-white px-[91px] pb-[67px]">
-      <div className="flex gap-[167px]">
-        {/* Left Side - Insights List */}
-        <div className="flex gap-[68px]">
-          {/* Label */}
-          <div className="flex-shrink-0">
-            <div className="bg-[#eee] rounded-[20px] px-[23px] pt-[123px] pb-[92px] w-[224px]">
-              <h3 className="text-[24px] font-semibold text-black font-[family-name:var(--font-playfair)] w-[175px]">
+    <section className="w-full bg-white px-[60px] pb-[40px]">
+      <div className="flex gap-10">
+        {/* Left Side - Stats and Insights List */}
+        <div className="flex gap-6">
+          {/* Label and Stats */}
+          <div className="flex flex-col gap-4">
+            {/* Label */}
+            <div className="bg-[#eee] rounded-[16px] px-4 pt-[70px] pb-5 w-[160px]">
+              <h3 className="text-[16px] font-semibold text-black font-[family-name:var(--font-playfair)] leading-tight">
                 INSPIRATION &<br />
                 INSIGHTS
               </h3>
             </div>
           </div>
 
-          {/* Insights List */}
-          <div className="flex flex-col gap-[33px] pt-[4px] max-w-[500px]">
-            {insightItems.map((item, index) => (
-              <div key={index} className="flex flex-col gap-[4px]">
-                <h4 className={`text-[16px] font-semibold font-[family-name:var(--font-poppins)] ${item.isActive ? 'text-[#00338d]' : 'text-black'}`}>
-                  {item.title}
-                </h4>
-                <p className={`text-[14px] font-[family-name:var(--font-poppins)] leading-[1.4] ${item.isActive ? 'text-[#00338d]' : 'text-black'}`}>
-                  {item.description}
+          {/* Stats with Map Background + Insights List */}
+          <div className="flex gap-8">
+            {/* Stats Section with Map */}
+            <div 
+              className="w-[200px] py-4 flex flex-col gap-4"
+              style={{
+                backgroundImage: "url('/map-with-white-grey-1@2x.png')",
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              <div className="flex flex-col">
+                <h2 className="text-[28px] font-semibold text-[#333] font-[family-name:var(--font-playfair)]">
+                  35+
+                </h2>
+                <p className="text-[11px] text-[#333] font-[family-name:var(--font-poppins)]">
+                  Years of Experience<br />
+                  Connecting Japan<br />
+                  and the World
                 </p>
-                <div className={`w-full h-[2px] mt-[4px] ${item.isActive ? 'bg-[#00338d]' : 'bg-[#bababa]'}`} />
               </div>
-            ))}
+              <div className="flex flex-col">
+                <h2 className="text-[28px] font-semibold text-[#333] font-[family-name:var(--font-playfair)]">
+                  15+
+                </h2>
+                <p className="text-[11px] text-[#333] font-[family-name:var(--font-poppins)]">
+                  Countries Covered<br />
+                  With Our Alliance<br />
+                  Network
+                </p>
+              </div>
+            </div>
+
+            {/* Insights List */}
+            <div className="flex flex-col gap-4 max-w-[340px]">
+              {insightItems.map((item, index) => (
+                <div key={index} className="flex flex-col gap-1">
+                  <h4 className={`text-[13px] font-semibold font-[family-name:var(--font-poppins)] ${item.isActive ? 'text-[#00338d]' : 'text-black'}`}>
+                    {item.title}
+                  </h4>
+                  <p className={`text-[11px] font-[family-name:var(--font-poppins)] leading-[1.4] ${item.isActive ? 'text-[#00338d]' : 'text-[#333]'}`}>
+                    {item.description}
+                  </p>
+                  <div className={`w-full h-[1.5px] mt-1 ${item.isActive ? 'bg-[#00338d]' : 'bg-[#d9d9d9]'}`} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Right Side - Image Cards */}
-        <div className="flex gap-[31.5px] pt-[28px]">
+        <div className="flex gap-4 ml-auto">
           {/* Pre-Market Card - Large */}
-          <div className="relative w-[374px] h-[498px] rounded-[20px] overflow-hidden flex-shrink-0">
+          <div className="relative w-[260px] h-[360px] rounded-[16px] overflow-hidden flex-shrink-0">
             <Image
-              src="/Mask-group3@2x.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-SVgDymOjIUuJr3YTxhGc3MbFR3u2a7.png"
               alt="Pre-Market"
               fill
-              className="object-cover"
+              className="object-cover object-[75%_center]"
             />
             {/* Gradient Overlay */}
             <div 
               className="absolute inset-0"
               style={{
-                background: "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(12,27,54,0.79) 90%)",
+                background: "linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(12,27,54,0.85) 100%)",
               }}
             />
             {/* Content */}
-            <div className="absolute bottom-7 left-[35px] right-[35px]">
-              <p className="text-[20px] text-white font-[family-name:var(--font-poppins)]">
-                <span className="font-semibold">Pre-Market</span>
-                <span className="text-[14px]"> Evaluating Supply Chain Readiness Before Committing Capital in Emerging Markets</span>
+            <div className="absolute bottom-4 left-4 right-4">
+              <p className="text-[14px] font-semibold text-white font-[family-name:var(--font-poppins)]">
+                Pre-Market
+              </p>
+              <p className="text-[10px] text-white/90 font-[family-name:var(--font-poppins)] leading-tight">
+                Evaluating Supply Chain Readiness Before Committing Capital in Emerging Markets
               </p>
             </div>
           </div>
 
           {/* Operations Card - Narrow */}
-          <div className="relative w-[139px] h-[498px] rounded-[20px] overflow-hidden flex-shrink-0">
+          <div className="relative w-[100px] h-[360px] rounded-[16px] overflow-hidden flex-shrink-0">
             <Image
-              src="/Mask-group@2x.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-SVgDymOjIUuJr3YTxhGc3MbFR3u2a7.png"
               alt="Operations"
               fill
-              className="object-cover"
+              className="object-cover object-[85%_center]"
             />
             {/* Gradient Overlay */}
             <div 
               className="absolute inset-0"
               style={{
-                background: "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(12,27,54,0.79) 90%)",
+                background: "linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(12,27,54,0.85) 100%)",
               }}
             />
             {/* Content - Rotated */}
-            <div className="absolute bottom-7 left-1/2 -translate-x-1/2">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
               <p 
-                className="text-[20px] text-white font-semibold font-[family-name:var(--font-poppins)] whitespace-nowrap"
+                className="text-[14px] text-white font-semibold font-[family-name:var(--font-poppins)] whitespace-nowrap"
                 style={{
                   writingMode: "vertical-rl",
                   transform: "rotate(180deg)",
@@ -113,24 +151,24 @@ export default function Insights() {
           </div>
 
           {/* Growth & Expansion Card - Narrow */}
-          <div className="relative w-[139px] h-[498px] rounded-[20px] overflow-hidden flex-shrink-0">
+          <div className="relative w-[100px] h-[360px] rounded-[16px] overflow-hidden flex-shrink-0">
             <Image
-              src="/Mask-group2@2x.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-SVgDymOjIUuJr3YTxhGc3MbFR3u2a7.png"
               alt="Growth & Expansion"
               fill
-              className="object-cover"
+              className="object-cover object-[95%_center]"
             />
             {/* Gradient Overlay */}
             <div 
               className="absolute inset-0"
               style={{
-                background: "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(12,27,54,0.79) 90%)",
+                background: "linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(12,27,54,0.85) 100%)",
               }}
             />
             {/* Content - Rotated */}
-            <div className="absolute bottom-[29px] left-1/2 -translate-x-1/2">
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
               <p 
-                className="text-[20px] text-white font-semibold font-[family-name:var(--font-poppins)] leading-[20px]"
+                className="text-[14px] text-white font-semibold font-[family-name:var(--font-poppins)] leading-tight"
                 style={{
                   writingMode: "vertical-rl",
                   transform: "rotate(180deg)",
